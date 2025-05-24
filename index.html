@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Burç Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8303819511839648"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>✨ Burç Hesaplayıcı ✨</h1>
+        <button id="darkModeToggle" class="mode-toggle">Karanlık Mod</button>
+        <p>Doğum tarihinizi girerek burcunuzu ve özelliklerini öğrenin!</p>
+    </header>
+
+    <form id="burcForm" autocomplete="off">
+        <div class="input-group">
+            <label for="gun">Doğum Gününüz:</label>
+            <input type="number" id="gun" name="gun" placeholder="Örn: 15" min="1" max="31" required />
+        </div>
+
+        <div class="input-group">
+            <label for="ay">Doğum Ayınız:</label>
+            <input type="number" id="ay" name="ay" placeholder="Örn: 7" min="1" max="12" required />
+        </div>
+
+        <div class="input-group cinsiyet-group">
+            <span>Cinsiyetinizi Seçin:</span>
+            <label><input type="radio" id="erkek" name="cinsiyet" value="Erkek" required /> Erkek</label>
+            <label><input type="radio" id="kadin" name="cinsiyet" value="Kadın" /> Kadın</label>
+        </div>
+
+        <button type="submit" id="hesaplaBtn" class="btn">Burcumu Hesapla</button>
+    </form>
+
+    <section id="sonuc" class="result-box">
+        <p>Burcunuz ve özellikleri burada görünecek...</p>
+    </section>
+
+    <!-- Google AdSense Reklam Alanı -->
+    <ins class="adsbygoogle"
+         style="display:block; text-align:center; margin: 20px 0;"
+         data-ad-client="ca-pub-8303819511839648"
+         data-ad-slot="9484631407"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <footer>
+        <small>© 2025 Burç Hesaplayıcı. Tüm hakları saklıdır.</small>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

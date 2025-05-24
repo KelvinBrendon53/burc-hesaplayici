@@ -1,0 +1,149 @@
+/* Genel stil ve varsayılan açık tema */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mode-toggle {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.mode-toggle:hover {
+  background-color: #357abd;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-group input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+.input-group input[type="number"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.cinsiyet-group span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cinsiyet-group label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #357abd;
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #eef4fb;
+  border-radius: 8px;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+.burc-karti h3 {
+  margin-top: 0;
+}
+
+.error {
+  color: #d93025;
+  font-weight: 700;
+}
+
+/* ----------- Karanlık Mod ----------- */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 10px rgb(255 255 255 / 0.1);
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #bb86fc;
+  color: #121212;
+}
+body.dark-mode .mode-toggle:hover {
+  background-color: #9a6ef8;
+}
+
+body.dark-mode .input-group input[type="number"] {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  color: #eee;
+}
+body.dark-mode .input-group input[type="number"]:focus {
+  border-color: #bb86fc;
+}
+
+body.dark-mode .result-box {
+  background-color: #2a2a2a;
+  color: #ddd;
+}
+
+body.dark-mode .btn {
+  background-color: #bb86fc;
+  color: #121212;
+}
+body.dark-mode .btn:hover {
+  background-color: #9a6ef8;
+}
